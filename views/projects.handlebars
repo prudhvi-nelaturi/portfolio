@@ -1,0 +1,12 @@
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        {{#each projects}}
+        <div class="project">
+            <h3>{{this.title}}</h3>
+            <p>{{this.description}}</p>
+            <a href="{{this.link}}">View Project</a>
+        </div>
+        {{/each}}
+    </div>
+</section>
