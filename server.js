@@ -47,10 +47,9 @@ app.get('/contact', (req, res) => {
 
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
-  // Handle form submission, e.g., save to database or send an email
   const mailOptions = {
     from: email,
-    to: 'your-email@gmail.com',
+    to: 'prudhvinelaturi@gmail.com',
     subject: `Contact Form Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
@@ -61,6 +60,7 @@ app.post('/contact', (req, res) => {
     }
     res.send('Email sent successfully!');
   });
+  alert('Thank you for contacting me.');
   res.redirect('/');
 });
 
