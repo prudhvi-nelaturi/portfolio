@@ -1,1 +1,1 @@
-This my portfolio that talk about me.
+This my portfolio that talks about me.
