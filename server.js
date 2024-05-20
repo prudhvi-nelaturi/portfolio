@@ -60,7 +60,6 @@ app.post('/contact', (req, res) => {
     }
     res.send('Email sent successfully!');
   });
-  alert('Thank you for contacting me.');
   res.redirect('/');
 });
 
